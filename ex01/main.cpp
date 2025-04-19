@@ -6,8 +6,8 @@ int	main(void)
 	Zombie* zombie_horde = zombieHorde(num, "horde");
 	for (int i = 0; i < num; i++)
 	{
-		std::cout << i << ": ptr " << zombie_horde << ": ";
-		zombie_horde->announce();
-		zombie_horde += 1;
+		std::cout << i << ": ptr " << &(zombie_horde[i]) << ": ";
+		zombie_horde[i].announce();
 	}
+	delete[] zombie_horde;
 }

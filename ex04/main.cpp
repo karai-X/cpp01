@@ -1,6 +1,4 @@
-#include <string>
-#include <iostream>
-#include <fstream>
+#include "main.hpp"
 
 std::string my_replace(std::string str, std::string from, std::string to)
 {
