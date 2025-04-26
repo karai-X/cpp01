@@ -31,9 +31,9 @@ void Harl::error(void)
 void Harl::complain(std::string level)
 {
 	int N = 4;
-	std::string find[N] = {"DEBUG", "INFO", "WARNING", "ERROR"};
+	std::string find[4] = {"DEBUG", "INFO", "WARNING", "ERROR"};
 	void (Harl::*ptr[4])() = {&Harl::debug, &Harl::info, &Harl::warning, &Harl::error};
-	for (int i = 0; i < N; i++)
+	for (int i = 0; i < 4; i++)
 	{
 		if (level == find[i])
 		{
