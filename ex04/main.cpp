@@ -25,13 +25,13 @@ int	main(int argc, char *argv[])
 	std::string file_name_replace = file_name + ".replace";
 	std::string from = argv[2];
 	std::string to = argv[3];
-	std::ifstream file(file_name);
+	std::ifstream file(file_name.c_str());
 	if (!file)
 	{
 		std::cerr << "Input file not opened." << std::endl;
 		return 1;
 	}
-	std::ofstream file_replace(file_name_replace);
+	std::ofstream file_replace(file_name_replace.c_str());
 	if (!file_replace)
 	{
 		std::cerr << "Output file not opened." << std::endl;

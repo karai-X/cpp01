@@ -1,6 +1,6 @@
 #include "Harl.h"
 
-int	main(int argc, char *argv[])
+int	main(void)
 {
 	Harl harl;
 	harl.complain("DEBUG");
